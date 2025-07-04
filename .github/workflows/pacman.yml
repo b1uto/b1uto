@@ -2,14 +2,16 @@ name: Generate Pacman Contribution Graph
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Runs once a day
-  workflow_dispatch:
+    - cron: '0 0 * * *'  # Run once a day
+  workflow_dispatch:      # Allow manual runs
 
 jobs:
   generate:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout Repository
+        uses: actions/checkout@v3
 
       - name: Generate Pacman Graph
         uses: yohamta/pacman-github-contribution@v1
