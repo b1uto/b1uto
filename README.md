@@ -54,6 +54,10 @@
 
 ###
 
-<img src="https://raw.githubusercontent.com/b1uto/b1uto/output/snake.svg" alt="Snake animation" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/b1uto/b1uto/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/b1uto/b1uto/output/github-snake.svg" />
+  <img alt="b1uto contribution snake" src="https://raw.githubusercontent.com/b1uto/b1uto/output/github-snake.svg" />
+</picture>
 
 ###
